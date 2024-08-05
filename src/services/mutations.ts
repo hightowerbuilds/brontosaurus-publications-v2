@@ -5,7 +5,6 @@ import { Todo } from '../types/todo'
 
 
 export function useCreateTodo() {
-
     const queryClient = useQueryClient();
 
     return useMutation({
@@ -27,11 +26,9 @@ export function useCreateTodo() {
     })
 } 
 
-
 export function useUpdateTodo() {
     const queryClient = useQueryClient();
 
- 
     return useMutation({
         mutationFn: (data: Todo) => updateTodo(data),
         onSettled: async (_, error, variables) => {
@@ -45,7 +42,6 @@ export function useUpdateTodo() {
     })
 
 }
-
 
 export function useDeleteTodo() {
     const queryClient = useQueryClient();
@@ -62,3 +58,5 @@ export function useDeleteTodo() {
         },
     })
 }
+
+
