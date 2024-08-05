@@ -1,11 +1,10 @@
 
 
-export interface Message {
+export interface Messages {
     id: string;
-    userID: string;
+    user_ID: string;
     name: string;
-    createdAt: Date;
+    created_at: string;
     post: string;
-    views: number;
-    replies: number;
+   
 }
