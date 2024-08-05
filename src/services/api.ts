@@ -27,3 +27,4 @@ export const updateTodo = async (data: Todo) => {
 export const deleteTodo = async (id: number) => {
     await axiosInstance.delete<Todo[]>(`todos/${id}`);
 }
+
