@@ -35,10 +35,8 @@ export default function MessageBoard() {
       <h2>Message Board</h2>
      
       {data?.map((message) => ( 
-        <p style={{ 
-          display: 'grid',
-          border: '1px black solid'
-          }}>
+
+        <p style={{ display: 'grid', border: '1px black solid' }}>
           
           <p key={message.id}>name:{message.name}</p>
           <p key={message.id}>time:{message.created_at}</p>
