@@ -1,0 +1,16 @@
+
+
+.messagesMainBox {
+    font-family: monospace;
+}
+
+.messageHeading {
+    font-family: monospace;
+}
+
+.postBox {
+    display: block;
+    width: fit-content;
+    padding: 1%;
+    border: 1px black solid;
+}
